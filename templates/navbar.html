@@ -1,5 +1,10 @@
 <nav>
-        <div class="nav-wrapper">
-            <a href="#!" class="brand-logo center">Medium Clone</a>
-        </div>
+    <div class="nav-wrapper">
+        <a href="#" class="brand-logo center"><i class="material-icons">cloud</i>Here you can find articles and can create your own 🔖</a>
+        <a href="/" class="brand-logo right">Home 🏠</a>
+        <ul id="nav-mobile" class="left hide-on-med-and-down">
+        <li><a href="{{url_for('articles')}}">Articles</a></li>
+        <li><a href="{{ url_for('new_article') }}">Create Article</a></li>
+        </ul>
+    </div>
 </nav>

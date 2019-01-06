@@ -7,18 +7,57 @@
 
     <div class="container">
         <div class="row">
+
+            <ul class="pagination">
+                    <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+                    <li class="waves-effect"><a href="{{url_for('songs')}}">Songs</a></li>
+                    <li class="active"><a href="{{url_for('tv')}}">TV Shows</a></li>
+                    
+                    <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+            </ul>
+
             <div class="col s12 m6">    
                 <div class="card blue-grey darken-1">
                     <div class="card-content white-text">
                         <span class="card-title">Number of Articles</span>
-                        <h1> 7 </h1>
+                        <h1>{{size}}</h1>
                     </div>
                     <div class="card-action">
                         <a href="{{url_for('articles')}}">ARTICLES</a>
-                        <a href="#">CREATE ARTICLES</a>
+                        <a href="{{ url_for('new_article') }}">Create Article</a>
                     </div>
                 </div>
             </div>
+
+           
+
         </div>
+
+        <footer class="page-footer">
+            <div class="container">
+                <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">First Website</h5>
+                    <i class="material-icons">face</i>
+                    <p class="grey-text text-lighten-4">Code for cause</p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Links</h5>
+                    <ul>
+                    <li><a class="grey-text text-lighten-3" href="https://www.facebook.com/kunalkushwaha1999">Facebook</a></li>
+                    <li><a class="grey-text text-lighten-3" href="https://twitter.com/kush_kunal?fbclid=IwAR3piM4is8gF-5Cpsy1D-Z8JJTb375MPWs6FYT2vllFzwveHMHCJ6O1bwVA">Twitter</a></li>
+                    </ul>
+                </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <div class="container">
+                © 2018 - TINY RICKKK
+                <a class="grey-text text-lighten-4 right" href="http://media.comicbook.com/2016/02/bazingasheldon-171623.jpg">DONT CLICK</a>
+                </div>
+            </div>
+        </footer>
+
+
     </div>
 {% endblock %}

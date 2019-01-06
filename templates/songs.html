@@ -1,0 +1,117 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    {% include 'navbar.html' %}
+
+    <div class="container">
+        <div class="row">
+
+                <ul class="pagination">
+                        <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+                        <li class="waves-effect"><a href="{{url_for('songs')}}">Songs</a></li>
+                        <li class="active"><a href="{{url_for('tv')}}">TV Shows</a></li>
+                        
+                        <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+                </ul>
+                <div class="col s12 m6">   
+                    <div class="card">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="https://static.qobuz.com/images/covers/86/80/0060251708086_600.jpg">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4">My Favorite Song<i class="material-icons right">more_vert</i></span>
+                            <p><a href="https://www.youtube.com/watch?v=yfdAGkjHGac">Click here</a></p>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i></span>
+                            <p>Your subtleties
+                                    They strangle me
+                                    I can't explain myself at all
+                                    And all that wants
+                                    And all that needs
+                                    All I don't want to need at all
+                                    The walls start breathing
+                                    My mind's un-weaving
+                                    Maybe it's best you leave me alone
+                                    A weight is lifted
+                                    On this evening
+                                    I give the final blow
+                                    When darkness turns to light
+                                    It ends tonight
+                                    It ends tonight
+                                    A falling star
+                                    Least I fall alone
+                                    I can't explain what you can't explain
+                                    Your finding things that you didn't know
+                                    I look at you with such disdain
+                                    The walls start breathing
+                                    My mind's un-weaving
+                                    Maybe it's best you leave me alone
+                                    A weight is lifted
+                                    On this evening
+                                    I give the final blow
+                                    When darkness turns to light
+                                    It ends tonight
+                                    It ends tonight
+                                    Just a little insight will make this right
+                                    It's too late to fight
+                                    It ends tonight
+                                    It ends tonight
+                                    Now I'm on my own side
+                                    It's better than being on your side
+                                    It's my fault when you're blind
+                                    It's better that I see it through your eyes
+                                    All these thoughts locked inside
+                                    Now you're the first to know
+                                    When darkness turns to light
+                                    It ends tonight
+                                    It ends tonight
+                                    Just a little insight will make this right
+                                    It's too late to fight
+                                    It ends tonight
+                                    It ends tonight
+                                    When darkness turns to light
+                                    It ends tonight
+                                    It ends tonight
+                                    Just a little insight will make this right
+                                    It's too late to fight
+                                    It ends tonight
+                                    It ends tonight</p>
+                        </div>
+                    </div>
+                </div>>
+
+
+
+
+        </div>
+
+        <footer class="page-footer">
+            <div class="container">
+                <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">First Website</h5>
+                    <i class="material-icons">face</i>
+                    <p class="grey-text text-lighten-4">Code for cause</p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Links</h5>
+                    <ul>
+                    <li><a class="grey-text text-lighten-3" href="https://www.facebook.com/kunalkushwaha1999">Facebook</a></li>
+                    <li><a class="grey-text text-lighten-3" href="https://twitter.com/kush_kunal?fbclid=IwAR3piM4is8gF-5Cpsy1D-Z8JJTb375MPWs6FYT2vllFzwveHMHCJ6O1bwVA">Twitter</a></li>
+                    </ul>
+                </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <div class="container">
+                © 2018 - TINY RICKKK
+                <a class="grey-text text-lighten-4 right" href="http://media.comicbook.com/2016/02/bazingasheldon-171623.jpg">DONT CLICK</a>
+                </div>
+            </div>
+        </footer>
+
+
+    </div>
+{% endblock %}
