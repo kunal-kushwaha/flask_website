@@ -2,20 +2,20 @@ from flask import Flask, render_template, request
 from article import Article
 app = Flask(__name__)
 
-postss = []
+posts = []
 
 @app.route('/')
 def index():
-    return render_template('index.html', size=len(postss))
+    return render_template('index.html', size=len(posts))
 
 @app.route('/articles')
 def articles():
-    return render_template('articles.html', articles=postss)
+    return render_template('articles.html', articles=posts)
 
 @app.route('/articles/<int:id>')
 def article(id):
     try: 
-        post = postss[id-1]
+        post = posts[id-1]
         return render_template('article.html', article=post)
     except IndexError:
         return render_template('404.html')
