@@ -1,0 +1,16 @@
+<!-- this file has basic information so that we dont have to repeat steps in html files -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My application</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/materialize.min.css') }}">
+        <script src = "{{ url_for('static', filename='js/materialize.min.js')}}"> </script>
+    </head>
+    <body>
+        {% block content %} {% endblock %}
+    </body>
+</html>
+
+
+

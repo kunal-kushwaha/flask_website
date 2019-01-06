@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    {% include 'navbar.html' %}
+
+    <div class="container">
+        <!-- this is just one row, but we can look it as many rows in the browser -->
+        <div class="row">
+        {% for article in articles %}
+
+                <div class="col s12 m6">
+                <div class="card blue-grey darken-1">
+                    <div class="card-content white-text">
+                    <span class="card-title">{{article.title}}</span>
+                    <small>{{article.subtitle}}</small>
+                    <p> {{article.body[:50]}} </p>
+                    <p class="right"> - {{article.author}}</p>
+                    <p> {{article.datetime}} </p>
+                    </div>
+                    <div class="card-action">
+                        <!-- loop.index in jinja2 so that we dont have to enumerate -->
+                    <a href="{{ url_for('article', id=loop.index) }}">Read More</a>
+                    <!-- loop.index returns the index of the loop running, starts from 1 and not 0. Hence we do not have to use enumerate -->
+                    </div>
+                </div>
+                </div>
+            
+        {% endfor %}
+        </div>
+    </div>
+
+{% endblock %}
