@@ -25,9 +25,6 @@ def article(id):
     except IndexError:
         return render_template('404.html')
 
-@app.route('/new_article')
-def 
-
 
 if __name__ == '__main__':
     app.run(port=8000, debug=True)
